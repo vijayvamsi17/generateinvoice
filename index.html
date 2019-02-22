@@ -1,0 +1,97 @@
+<<!DOCTYPE html>
+    <html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Saradhi Pty Ltd</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./src/css/main.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Saradhi Pty Ltd</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Invoice <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="container bodyContainer">
+
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Description 1</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Default" id="desc1" value="Locum SMO Dr Vijay Kopparthi" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Description 2</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Default" id="desc2" value="Dirranbandi MPHS Full day" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Description 3</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Default" id="desc3" value="" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Price</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Default" id="price" value="" placeholder="0.00" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">GST</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Default" id="gst" value="" placeholder="0.00" aria-describedby="inputGroup-sizing-default">
+                </div>
+                
+                <div class="btnSubmit">
+                        <button type="submit" class="btn btn-primary mb-2 submitButton">Submit</button>
+                </div>
+            </form>
+
+
+            <div class="tableContainer">
+                    <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th>Qty</th>
+                                    <th>Price</th>
+                                    <th>GST</th>
+                                    <th>Amount</th>
+                                    <!-- <th>Action</th> -->
+                                </tr>
+                            </thead>
+                            <tbody class="myTable">
+                            </tbody>
+                        </table>
+                        <div class="btnSubmit">
+                                <button type="submit" class="btn btn-primary mb-2 pdfButton">Get PDF</button>
+                        </div>
+            </div>
+        </main>
+
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="./node_modules/pdfmake/build/pdfmake.min.js"></script>
+        <script src="./node_modules/pdfmake/build/vfs_fonts.js"></script>
+        <script src="./src/js/main.js"></script>
+    </body>
+
+    </html>

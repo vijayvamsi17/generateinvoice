@@ -1,9 +1,10 @@
 {
   "name": "generatepdf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
-    "bootstrap": "^4.3.1",
     "jquery": "^3.3.1",
+    "popper.js": "^1.14.7",
+    "bootstrap": "^4.3.1",
     "pdfmake": "^0.1.53"
   }
 }

@@ -47,6 +47,10 @@ $(function () {
     $('.pdfButton').click(function(e) {
         e.preventDefault();
 
+        if(mainJson.content[3].table.body.length > 1) {
+            mainJson.content[3].table.body = mainJson.content[3].table.body.slice(0,1);
+        }
+
         for(var i=0; i<tableArray.length; i++) {
             mainJson.content[3].table.body.push([
                 {
